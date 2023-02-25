@@ -1,9 +1,10 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const BottomBar = () => {
+  const location = useLocation();
   return (
     <div className='navbar bg-base-100 px-[5rem]'>
       <div className='navbar-start hidden'>
@@ -88,22 +89,44 @@ const BottomBar = () => {
           <li>
             <Link to='/home'>Home</Link>
           </li>
-          <li>
+          <li
+            className={
+              location.pathname === '/pages/products' ? 'bg-gray-200' : ''
+            }
+          >
             <Link to='/pages/products'>Products</Link>
           </li>
-          <li>
+          <li
+            className={
+              location.pathname === '/pages/sellers' ? 'bg-gray-200' : ''
+            }
+          >
             <Link to='/pages/sellers'>Sellers</Link>
           </li>
-          <li>
+          <li
+            className={
+              location.pathname === '/pages/contactUs' ? 'bg-gray-200' : ''
+            }
+          >
             <Link to='/pages/contactUs'>Contact Us</Link>
           </li>
-          <li>
+          <li
+            className={
+              location.pathname === '/pages/aboutUs' ? 'bg-gray-200' : ''
+            }
+          >
             <Link to='/pages/aboutUs'>About Us</Link>
           </li>
-          <li>
+          <li
+            className={location.pathname === '/pages/faqs' ? 'bg-gray-200' : ''}
+          >
             <Link to='/pages/faqs'>FAQs</Link>
           </li>
-          <li>
+          <li
+            className={
+              location.pathname === '/pages/blogs' ? 'bg-gray-200' : ''
+            }
+          >
             <Link to='/pages/blogs'>Blogs</Link>
           </li>
         </ul>

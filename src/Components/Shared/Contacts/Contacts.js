@@ -25,28 +25,32 @@ const Contacts = () => {
           </div>
         </div>
         <div className='grid flex-grow h-32 w-1/4 card rounded-box place-items-center'>
-          <div className='flex items-center gap-4 px-8'>
-            <FontAwesomeIcon
-              icon={faPhoneFlip}
-              className='text-4xl text-primary'
-            />
-            <div className=''>
-              <p className='text-lg'>Call Us</p>
-              <p className='text-sm text-slate-400'>01976544088</p>
+          <a href='tel:+8801976544088'>
+            <div className='flex items-center gap-4 px-8'>
+              <FontAwesomeIcon
+                icon={faPhoneFlip}
+                className='text-4xl text-primary'
+              />
+              <div className=''>
+                <p className='text-lg'>Call Us</p>
+                <p className='text-sm text-slate-400'>01976544088</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div className='grid flex-grow h-32 w-1/4 card rounded-box place-items-center'>
-          <div className='flex items-center gap-4 px-8'>
-            <FontAwesomeIcon
-              icon={faEnvelopeOpen}
-              className='text-4xl text-primary'
-            />
-            <div className=''>
-              <p className='text-lg'>Mail Us</p>
-              <p className='text-sm text-slate-400'>rootsgoodsbd@gmail.com</p>
+          <a href='mailto:rootsgoodsbd@gmail.com'>
+            <div className='flex items-center gap-4 px-8'>
+              <FontAwesomeIcon
+                icon={faEnvelopeOpen}
+                className='text-4xl text-primary'
+              />
+              <div className=''>
+                <p className='text-lg'>Mail Us</p>
+                <p className='text-sm text-slate-400'>rootsgoodsbd@gmail.com</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div className='block w-full h-[1px] bg-gray-700' />

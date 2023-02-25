@@ -14,6 +14,7 @@ import Header from './Components/Header/Header';
 import Pages from './Components/Pages/Pages';
 import Contacts from './Components/Shared/Contacts/Contacts';
 import Footer from './Components/Shared/Footer/Footer';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       </Routes>
       <Contacts />
       <Footer />
+      <Toaster />
     </div>
   );
 }

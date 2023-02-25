@@ -32,18 +32,22 @@ const MiddleBar = () => {
         </div>
         <div className='flex gap-1 items-center'>
           <div>
-            <select className='select font-normal text-base hover:bg-gray-200'>
+            <select className='select focus:select-primary font-normal text-base hover:bg-gray-200'>
               <option value='english'>English</option>
-              <option value='bangla'>Bangla</option>
+              <option value='bangla'>বাংলা</option>
             </select>
           </div>
           <div className=''>
             <Link to='/login'>
-              <span className='hover:bg-gray-200 p-3'>Login</span>
+              <span className='hover:bg-gray-200 active:bg-primary active:text-white p-3'>
+                Login
+              </span>
             </Link>
             /
             <Link to='/register'>
-              <span className='hover:bg-gray-200 p-3'>Register</span>
+              <span className='hover:bg-gray-200 active:bg-primary active:text-white p-3'>
+                Register
+              </span>
             </Link>
             <Link to='/favorite'>
               <span className='mx-2 text-primary text-lg'>
